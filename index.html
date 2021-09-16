@@ -9,15 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
 
 <!-- header  -->
    <header class="hdr container">
-     <a class="logo" href="./index.html"><span class="logo-web">Web</span>
-        <span class="logo-studio">Studio</span></a>
+     <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
     <nav class="">
-      <ul class="menu">
+      <ul class="menu-list">
         <li><a class="menu-link current" href="./index.html">Студия</a>
         </li>
         <li><a class="menu-link" href="./portfolio.html">Портфолио</a>
@@ -26,7 +26,7 @@
         </li>
       </ul>
     </nav>
-    <ul class="">
+    <ul class="contact-list">
       <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a> 
       </li>
       <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -35,68 +35,74 @@
 
 <!--  main  -->
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+    <section class="hero" >
+      <div class="hero-box">
+        <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="prime-btn" type="button">Заказать услугу</button>
       </div>
     </section>
 
-    <section class="section plan">
+    <section class="plan ">
+     <div class="plan-box">
       <h2 class="visually-hidden">План</h2>
-      <ul>
-        <li class="plan-item">
+      <ul class="plan-list">
+        <li class="plan-item placement">
           <h3 class="plan-item-title title">Внимание к деталям</h3>
-          <p class="">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          <p class="plan-item-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="plan-item placement">
           <h3 class="plan-item-title title">Пунктуальность</h3>
-          <p class="">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-        <li>
+          <p class="plan-item-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+        <li class="plan-item placement">
           <h3 class="plan-item-title title ">Планирование</h3>
-          <p class="">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-        <li>
+          <p class="plan-item-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+        <li class="plan-item placement">
           <h3 class="plan-item-title title">Современные технологии</h3>
-          <p class="">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
-      </ul> 
+          <p class="plan-item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+      </ul>
+     </div>
     </section>
 
     <section class="deal">
+     <div class="deal-box">
       <h2 class="deal-title title">Чем мы занимаемся</h2>
-      <ul>
-        <li class=""><img src="./img/tblt.jpg" alt="tablett" width="370" >
+      <ul class="deal-list">
+        <li class="deal-item placement"><img src="./img/tblt.jpg" alt="tablett" width="370" >
         </li>
-        <li class=""><img src="./img/smart.jpg" alt="smartphone" width="370"> 
+        <li class="deal-item placement"><img src="./img/smart.jpg" alt="smartphone" width="370"> 
         </li>
-        <li class=""><img src="./img/desct.jpg" alt="desctop" width="370" >
+        <li class="deal-item  placement"><img src="./img/desct.jpg" alt="desctop" width="370" >
         </li>
       </ul>
+     </div>
     </section>
 
-    <section class="team section">
+    <section class="team">
+     <div class="team-box">
       <h2 class="team-title title">Наша команда</h2>
-      <ul>
-        <li class="team-item-title"><img src="./img/dem-d.jpg" alt="Игорь Демьяненко" width="270"><div class=""><h3>Игорь Демьяненко</h3>
-          <p>Product Designer</p></div></li>
+      <ul class="team-list">
+        <li class="team-item placement"><img src="./img/dem-d.jpg" alt="Игорь Демьяненко" width="270"><div class=""><h3 class="team-item-title">Игорь Демьяненко</h3>
+          <p class="team-item-text">Product Designer</p></div></li>
 
-        <li class="team-item-title"><img src="./img/rep-d.jpg" alt="Ольга Репина" width="270"><div class=""><h3>Ольга Репина</h3>
-          <p>Frontend Developer</p></div></li>
+        <li class="team-item placement"><img src="./img/rep-d.jpg" alt="Ольга Репина" width="270"><div class=""><h3 class="team-item-title">Ольга Репина</h3>
+          <p class="team-item-text">Frontend Developer</p></div></li>
 
-        <li class="team-item-title"><img src="./img/tar-d.jpg" alt="Николай Тарасов" width="270"><div class=""><h3>Николай Тарасов</h3>
-          <p>Marketing</p></div></li>
+        <li class="team-item placement"><img src="./img/tar-d.jpg" alt="Николай Тарасов" width="270"><div class=""><h3 class="team-item-title">Николай Тарасов</h3>
+          <p class="team-item-text">Marketing</p></div></li>
 
-        <li class="team-item-title"><img src="./img/yer-d.jpg" alt="Михаил Ермаков" width="270"><div class=""><h3>Михаил Ермаков</h3>
-          <p>UI Designer</p></div></li>
+        <li class="team-item placement"><img src="./img/yer-d.jpg" alt="Михаил Ермаков" width="270"><div class=""><h3 class="team-item-title">Михаил Ермаков</h3>
+          <p class="team-item-text">UI Designer</p></div></li>
       </ul>
+     </div>
     </section>
   </main>
   
 <!--  footer  -->  
- <footer class="ftr">
-  <div class="container">
-    <a class="logo" href="./index.html"><span class="logo-web">Web</span ><span class="studio">Studio</span></a>
+ <footer class="ftr ">
+  <div class="ftr-box">
+    <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="studio">Studio</span></a>
     <address class="addr">
-      <ul>
+      <ul class="ftr-addr-list">
         <li><a class="ftr-address" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
         <li><a class="ftr-addr" href="mailto:info@example.com">info@example.com</a></li>
         <li><a class="ftr-addr" href="tel:+380961111111">+38 096 111 11 11</a></li>

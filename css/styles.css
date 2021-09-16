@@ -1,10 +1,14 @@
 :root {
   --prime-color: #2196F3;
   --second-color: #188CE8;
-
   --prime-title-color:#212121;
   --prime-text-color:#757575;
-  --d-color:#2F303A;
+  --bg-color:#2F303A;
+  --c-color: #ffffff;
+  --c1-color: #ECECEC;
+  --c2-color: #F5F4FA;
+  --c3-color: rgba(255, 255, 255, 0,6);
+  --d-color: #000000;
 }
 
 body {
@@ -16,44 +20,35 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   color: var(--prime-text-color);
-}
-
-address{
-  font-style: normal;
-}
-
+ }
+/* 
 ul {
   list-style: none;
-  margin-left:0;
   margin-top: 0;
   padding-left: 0;
-}
-
-a{
-  text-decoration: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+} 
+
+ address{ 
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
 }
 
 h1, h2, h3{
   margin-top: 0;
 }
 
-button{
+  button{
   border: none;
-}
-
-.container{
-  width:1200 px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -66,6 +61,16 @@ button{
   clip: rect(0 0 0 0);
 }
 
+/* -- header  -- */
+
+.hdr{
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid --c1-color ;
+}
+
 .logo{
   font-size: 26px;
   font-style: normal;
@@ -73,6 +78,7 @@ button{
   line-height: 1.2;
   letter-spacing: 0.03em;
   font-family: Raleway;
+  text-decoration: none;
 }
 
 .logo-web{
@@ -80,7 +86,21 @@ button{
 }
 
 .logo-studio{
-  color: #000;
+  color: var(--d-color);
+}
+
+.menu-list,
+.contact-list,
+.plan-list,
+.deal-list,
+.team-list,
+.ftr-addr-list,
+.btn-list,.folio-list{
+  list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .menu-link{
@@ -88,6 +108,7 @@ button{
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--prime-title-color);
+  text-decoration: none;
 }
 
 .contact{
@@ -95,6 +116,7 @@ button{
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--prime-text-color);
+  text-decoration: none;
 }
 
 .current,
@@ -107,19 +129,26 @@ button{
 
 /* hero */
 
+.hero-box{
+  margin: 0 auto;
+  padding: 200px 15px ;
+  width: 1200px;
+  align-items: center;
+  text-align: center;
+  }
 .hero{
-  min-width: 1600px;
   height: 600px;
-  background:var(--d-color);
+  background:var(--bg-color);
 }
 
 .hero-title{
+  margin-top: 0;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
+  color: var(--c-color);
 }
 
 .prime-btn{
@@ -128,13 +157,14 @@ button{
   background: var(--prime-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
   font-family: Roboto;
   font-weight:700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--c-color);
 }
 
 .prime-btn:hover,
@@ -142,15 +172,34 @@ button{
   background: var(--second-color);
 }
 
-/* section plan */
+/* sections plan, plan & .placement */
 
-.section{
-  padding: 94px 0;
-}
 
-.team{
-  background: #F5F4FA;
-}
+
+.placement{
+  display: inline-block;
+  margin-left: 13px;
+  margin-right: 14px ;
+} 
+
+
+.plan-box,
+.deal-box,
+.team-box,
+.ftr-box,
+.portfolio-box{
+  margin: 0 auto;
+  padding: 94px 15px ;
+  width: 1200px;
+ }
+
+/* .plan-list{
+      
+} */
+
+.plan-item{
+  width: 270px;}
+ 
 
 .title{
   font-weight: 700;
@@ -159,8 +208,15 @@ button{
 }
 
 .plan-item-title{
+  margin-top: 0;
   text-transform: uppercase;
 }
+
+.plan-item-text{
+  margin-top: 0;
+}
+
+/*  deal-title & team-title*/
 
 .deal-title,
 .team-title{
@@ -168,35 +224,51 @@ button{
   text-align: center;
 }
 
-.team-item-title{
-  font-weight: 500;
+
+/* section team */
+
+.team{
+  background: var(--c2-color);
+}
+
+.team-item{
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+}
+
+.team-item-title{
+  font-weight: 500;
   color: var(--prime-title-color);
 }
 
 .team-item-text{
   font-size: 16px;
-  line-height: 1.2;
   color: var(--prime-text-color);
 }
-
-
 
 /* footer */
 
 .ftr{
-  background-color:#000 ;
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color:var(--bg-color);
+  }
+
+.addr{
+  font-style: normal;
   
 }
 
 .ftr-address{
- color: #fff;
+ color: var(--c-color);
+ text-decoration: none;
 }
 
 .ftr-addr{
-  color: #FFFFFF99;
+  color: var(--c3-color);
+  text-decoration: none;
 }
 
 .ftr-addr:hover,
@@ -205,7 +277,7 @@ button{
 }
 
 .studio{
-  color: #fff;
+  color:var(--c-color);
 }
 
 /* portfolio */
@@ -214,7 +286,9 @@ button{
 
 .btn{
   height: 38px;
-  background: #F5F4FA;
+  border: none;
+  cursor: pointer;
+  background: var(--c2-color);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.2;
@@ -224,7 +298,14 @@ button{
 .btn:hover,
 .btn:focus{
 background: var(--prime-color);
-color: #fff;
+color: var(--c-color);
+}
+
+/*  folios */
+
+.card-bottom{
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .folio-title{
@@ -238,4 +319,11 @@ color: #fff;
 .folio-text{
   font-size: 16px;
   line-height: 1.87;
+}
+
+.img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
 }

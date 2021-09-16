@@ -15,11 +15,10 @@
 <body>
 
 <!-- header  -->
-   <header class="hdr container">
-     <a class="logo" href="./index.html"><span class="logo-web">Web</span>
-        <span class="logo-studio">Studio</span></a>
+   <header class="hdr">
+      <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
     <nav class="">
-      <ul class="menu">
+      <ul class="menu-list">
         <li><a class="menu-link" href="./index.html">Студия</a>
         </li>
         <li><a class="menu-link current" href="./portfolio.html">Портфолио</a>
@@ -28,7 +27,7 @@
         </li>
       </ul>
     </nav>
-    <ul class="">
+    <ul class="contact-list">
       <li><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a> 
       </li>
       <li><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -37,12 +36,12 @@
 
 <!--  main  -->
   <main>
-    <section class="folio">
-      <div class="container">
-        <h1 class="visually-hidden">Portfolio</h1>
-
-   <!-- button line -->
-        <ul>
+    <!-- portfolio -->  
+    <section class="portfolio section">
+        <h2 class="visually-hidden">Portfolio</h2>
+     
+      <div class="portfolio-box">
+        <ul class="btn-list">
           <li>
             <button class="btn" width="73" type="button">Все</button>
           </li>
@@ -59,63 +58,61 @@
             <button class="btn" width="130" typetype="button">Маркетинг</button>
           </li>
         </ul>
-
-   <!-- portfolio list -->
-
+     
         <h2 class="visually-hidden">Portfolio list</h2>
-        <ul class="folio">
-          <li>
+        <ul class="folio-list" >
+          <li class="card placement">
             <img src="./img/tec-d.jpg" alt="three pictures on sceen" width="370">
-              <div>
+              <div class="card-bottom">
                 <h3 class="folio-title">Технокряк</h3><p class="folio-text">Веб-сайт</p>
              </div>
           </li>
-           <li>
-              <img src="./img/pos-d.jpg" alt="two boys and ball" width="370">
-              <div>
-                <h3>Постер New Orlean vs Golden Star</h3><p class="folio-text">Дизайн</p>
+           <li class="placement">
+              <img class="img" src="./img/pos-d.jpg" alt="two boys and ball" width="370">
+              <div class="card-bottom">
+                <h3 class="folio-title">Постер New Orlean vs Golden Star</h3><p class="folio-text">Дизайн</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
               <img src="./img/res-d.jpg" alt="fish" width="370">
-              <div>
-                <h3>Ресторан Seafood</h3><p class="folio-text">Приложение</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Ресторан Seafood</h3><p class="folio-text">Приложение</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
               <img src="./img/pri-d.jpg" alt="headset" width="370">
-              <div>
-                <h3>Проект Prime</h3><p class="folio-text">Маркетинг</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Проект Prime</h3><p class="folio-text">Маркетинг</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
               <img src="./img/box-d.jpg" alt="two soaps" width="370">
-              <div>
-                <h3>Проект Boxes</h3><p class="folio-text">Приложение</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Проект Boxes</h3><p class="folio-text">Приложение</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
             <img src="./img/ins-d.jpg" alt="monitor screen" width="370">
-              <div>
-                <h3>Inspiration has no Borders</h3><p class="folio-text">Веб-сайт</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Inspiration has no Borders</h3><p class="folio-text">Веб-сайт</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
               <img src="./img/lim-d.jpg" alt="open book" width="370">
-              <div>
-                <h3>Издание Limited Edition</h3><p class="folio-text">Дизайн</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Издание Limited Edition</h3><p class="folio-text">Дизайн</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
               <img src="./img/lab-d.jpg" alt="label tag" width="370">
-              <div>
-                <h3>Проект LAB</h3><p class="folio-text">Маркетинг</p>
+              <div class="card-bottom">
+                <h3 class="folio-title">Проект LAB</h3><p class="folio-text">Маркетинг</p>
               </div>
            </li>
-           <li>
+           <li class="placement">
              <img src="./img/gro-d.jpg" alt="two hands at notebook keaboard" width="370">
-             <div>
-               <h3>Growing Business</h3><p class="folio-text">Приложение</p>
+             <div class="card-bottom">
+               <h3 class="folio-title">Growing Business</h3><p class="folio-text">Приложение</p>
              </div>
             </li>       
         </ul>
@@ -126,10 +123,10 @@
   
 <!--  footer  -->  
  <footer class="ftr">
-  <div class="container">
-    <a class="logo" href="./index.html"><span class="logo-web">Web</span ><span class="studio">Studio</span></a>
+  <div class="ftr-box">
+    <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="studio">Studio</span></a>
     <address class="addr">
-      <ul>
+      <ul class="ftr-addr-list">
         <li><a class="ftr-address" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
         <li><a class="ftr-addr" href="mailto:info@example.com">info@example.com</a></li>
         <li><a class="ftr-addr" href="tel:+380961111111">+38 096 111 11 11</a></li>
