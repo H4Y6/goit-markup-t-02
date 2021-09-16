@@ -21,34 +21,6 @@ body {
   text-align: left;
   color: var(--prime-text-color);
  }
-/* 
-ul {
-  list-style: none;
-  margin-top: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} 
-
- address{ 
-  font-style: normal;
-}
-
-a{
-  text-decoration: none;
-}
-
-h1, h2, h3{
-  margin-top: 0;
-}
-
-  button{
-  border: none;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -257,13 +229,10 @@ h1, h2, h3{
   width: 1200px;
   margin: 0 auto;
   padding: 60px 15px;
-  
-  
   }
 
 .addr{
   font-style: normal;
-  
 }
 
 .ftr-address{
@@ -330,5 +299,4 @@ color: var(--c-color);
   display: block;
   max-width: 100%;
   height: auto;
-  
-}
+  }
