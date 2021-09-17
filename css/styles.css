@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --prime-color: #2196F3;
   --second-color: #188CE8;
