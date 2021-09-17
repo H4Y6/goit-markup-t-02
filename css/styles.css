@@ -359,11 +359,13 @@ flex-wrap: wrap;
 
 .folio-list{
   margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .card{
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 14px;
+  margin-left: 13px;
 }
 
 .card-bottom{
